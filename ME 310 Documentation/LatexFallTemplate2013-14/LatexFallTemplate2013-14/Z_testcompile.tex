@@ -1,0 +1,41 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Extracted from ME310 Report Template (me310report.tex)
+% Use this abbreviated "shell" to process any single section when 
+% debugging Latex errors.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%BEGIN DOCUMENT STYLE SETTINGS%%%%%%%%%
+\documentclass[11pt,letterpaper,oneside]{memoir}
+\chapterstyle{section}
+\pagestyle{companion}
+\usepackage{graphicx}        % standard LaTeX graphics 
+\usepackage{color}               % support for colored fonts
+\usepackage{url}  \urlstyle{same}       % deal with url strings in bibliography
+\usepackage{multirow} %deal with merged cells in tables
+\usepackage{me310}    
+\commentsoff{remark}  % Do print comments (else:   \commentson{remark}  )
+%%%%%%%END DOCUMENT STYLE SETTINGS%%%%%%%%%%
+
+\usepackage{multirow} %deal with merged cells in tables
+\usepackage{supertabular}
+\usepackage{longtable}
+\usepackage{morefloats}
+
+%%ABBREVIATIONS that you defined in me310report.tex should be repeated here.
+\def\pmt{{\em Papier M\^{a}ch\`{e}}}  %Define "\pmt" to print "Papier Mache" 
+\def\cbike{{\em Casterbike} \,} % \cbike = Casterbike in italics +1space.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Include whichever section you want to test:
+\include{Context}
+
+% Test any bibliography items (or else comment out the lines below)
+\bibliographystyle{plainurl310}     %Modified slightly from plainurl.bst 
+\bibliography{me310report}  % Look for file called "me310report.bib" 
+
+ 
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

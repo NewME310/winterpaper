@@ -1,0 +1,204 @@
+% ME310 Report Template -- Started 28 July 2006  Mark Cutkosky
+% Updated: 7Aug08 -LMS; 25Nov10 Mark Cutkosky
+% Updated with some new sections 4Dec2012 Mark Cutkosky
+% Minor changes for 2013-14 13Nov2013 -- Mark C.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Rename this file to whatever you like (e.g. OurFallDoc.tex) and modify the title, authors
+% etc. below. If you rename the section files (e.g. Ch2context.tex) you'll need to change
+% the \include{ } calls in this document as well.
+
+%%%%%%%%%BEGIN DOCUMENT STYLE SETTINGS%%%%%%%%%%%
+% Don't modify this stuff unless you know what you're doing...
+% We are using the "memoir" class, a widely used set of macros book-like documents.
+% If you get errors that you are missing the "memoir" package you can download and 
+% install it:   http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/
+
+% memoir document class for standard USA letter paper, printed one side
+\documentclass[11pt,letterpaper,oneside]{memoir}
+\chapterstyle{section}
+%\pagestyle{companion}    % If you want fancier page headers 
+\usepackage{graphicx}        % standard LaTeX graphics 
+\usepackage{color}               % support for colored fonts
+\usepackage{url}  \urlstyle{same}     % deal with url strings in bibliography
+
+%Optional fonts if you don't like the default in Latex
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}  %This will give you Times Roman, like default in MS Word.
+%\usepackage{charter}       %This will give you a slightly bolder Charter font 
+
+%More special packages to help deal with long requirements tables 
+%that might span multiple pages.
+\usepackage{multirow} %deal with merged cells in tables
+\usepackage{supertabular}
+\usepackage{longtable}
+\usepackage{morefloats}
+
+\usepackage[pdftex,           %hyperlink cross references, etc.
+    pdfsubject={ME310 Documentation},
+    colorlinks={true},
+    linkcolor={black},
+    citecolor={blue},
+    bookmarksopenlevel=1,
+]{hyperref}
+
+%The file "me310.sty" should be in the same directory as this file.
+% It contains formatting for page setup, titlepage, glossary, references, etc.
+\usepackage{me310}
+%%%%%%%END DOCUMENT STYLE SETTINGS%%%%%%%%%%
+
+
+%%%%%%%%%%BEGIN TITLE PAGE%%%%%%%%%%%%%%%%
+%Replace the strings below with what's right  for you.
+
+%%Insert your Document Title here. Use \\ to force a newline.
+\title{An Appliance for\\
+Individual Well Being}
+
+\team{Our Team Name} 		% Insert your Team Project Name here.
+
+%% Insert Fall, Winter, Spring here:
+\quarter{Fall Quarter}
+
+%%Enter your local + global team members' names here:
+\author{  
+    Person One, Person Two, Person Three, Person Four\\
+    Person Five, Person Six, Person Seven, Person Eight\\
+    } %end authors
+
+%% If you don't want it to use the printing date, replace "\today"
+%% with the date that you want.
+\date{\today}
+%%%%%%%%%%%END TITLE PAGE%%%%%%%%%%%%%
+
+
+%%%%%%%%%BEGIN ANY CUSTOM ABBREVIATIONS%%%%%%
+% Define any abbreviations that will apply throughout the document
+% to save typing. Examples:
+\def\pmt{{\em Papier M\^{a}ch\`{e}}}  %Define "\pmt" to print "Papier Mache" with accents +1space
+\def\cbike{{\em Casterbike} \,}  %Define "\cbike" to print "Casterbike " italicized +1space
+%%%%%%%%%END CUSTOM ABBREVIATIONS%%%%%%%%%
+
+%%%%%%%%DRAFT COMMENTS%%%%%%%%%%%%%%%%
+%Allow comments (remarks) to be shown or hidden.
+% Put optional text in \begin{remark} ... \end{remark}  environments.
+%The usage is a bit counterintuitive: \commentsoff makes them visible; \commentson hides them.
+%\commentson{remark} %Don't print remarks.
+\commentsoff{remark}  %Do print remarks. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   BEGIN THE MAIN DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%If you want a figure on the cover page, this is where it goes.
+%7 cm is about max figure height before messing up title spacing.
+%If making your own fancy coverpage (e.g. in Photoshop) then comment out 
+%the \includegraphics{ } and use the \vspace{ } command.
+\begin{figure}[t]
+\centering
+  %An example cover image, from 2008 ME310 Kodak project
+  \includegraphics[height= 7cm]{Figures/Ch1frontmatter/KodakThing.pdf}
+%\vspace{3 cm}    %Use this instead when you have no cover picture 
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Make the title page using arguments defined above.
+\titlep
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Load file "Executive.tex" for the Executive summary.
+% Remember, this is a stand-alone section for executives to read.
+\include{Executive}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% TOC and LOF are automatically generated -- Note that sometimes have to "compile" Latex THREE
+% times to update the main .aux files, the TOC etc. files, and finally the PDF output with all changes
+% propagated to the printout.
+% Make Table of Contents title smaller than a normal Chapter heading:
+\renewcommand{\chaptitlefont}{\normalfont\Large\bfseries}
+\newpage
+\tableofcontents*  %asterisk to prevent it from getting a number
+
+% Optional Lists of Figures and Tables:
+\newpage
+\listoffigures*  %Note that for this you probably want to add the [short-headings] to captions.
+%\listoftables  %I decided to omit the LOT in this example.
+
+%Back to normal size for subsequent sections
+\renewcommand{\chaptitlefont}{\normalfont\Huge\bfseries}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Set up the Glossary. The template is looking for a file called
+% "glossaryterms.tex" with glossary terms and definitions.
+% You can either edit this file manually or you
+% can use the Memoir glossary feature in which you insert items like
+%   \glossary{glossary term}{our definition of what the term means}
+% wherever you like, as you write your documentation.
+% When you run the report through Latex, it will create a ".glo" file like
+% "OurFallDocument.glo" which you can edit to create the file "glossaryterms.tex"
+% There is also perl script I made which will do the formatting for you. 
+%  perl Glo2Tex OurFallDocument.glo > glossaryterms.tex
+\newpage
+\section*{Glossary}
+\addcontentsline{toc}{section}{Glossary}
+\label{sec-glossary}
+\begin{description}
+\input{glossaryterms}   % input the list "glossaryterms.tex"
+\end{description}
+
+%%%%%% Example of an optionally printed "remark"
+\begin{remark}
+\color{blue}
+It's a sign of a successful team that the glossary becomes extensive. Define any non-obvious or invented terms. For example, if you reference something by an acronym, that might be a glossary term. Teams also coin terms to describe design features. Define such terms here.  Don't define obvious stuff (axle, keyboard).  
+
+See comments in me310report.tex if you want to generate a glossary semi-automatically from tagged keywords.
+\normalcolor
+\end{remark}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% On to the main sections....  Just comment out the \input{} line
+%% for any chapters that aren't ready yet.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Context}   %Your team, the corporate partner, the project background
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Requirements}
+%This section is omitted from the Fall document
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Design_Development}   %Results of benchmarking, need-finding, CFP, CEP etc.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Design_Vision}  %This section is just your proposal or "Vision" for Fall.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Planning}  %Current and future plans.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Resources}  
+
+%%%%%BEGIN BIBLIOGRAPHY%%%%%%%%%
+% This is a two-step process in which you first create a ".bib" file, which is processed
+% by bibtex into a ".bbl" file for loading into the document. 
+% Many online journals and databases now have a feature to automatically download Bib
+% citations.  BibDesk is a handy (free) program for Macintosh for managing them.
+% EndNote and Refworks (is free to Stanford students) are good alternatives.
+\bibliographystyle{plainurl310}     %Modified slightly from plainurl.bst 
+\bibliography{me310reportfall}  % Look for file called "me310report.bib" 
+%
+% Alternatively, you can create your own bibliography list by hand.
+% In that case, comment out the last line above and replace with  \input{OurBibFile} 
+%%%%%END BIBLIOGRAPHY%%%%%%%%%
+
+%%%%%BEGIN APPENDIX SECTIONS%%%%%%%%%%%%%%%
+\begin{appendices}
+% \include{Appendix1}       % There could be multiple appendix files like this
+ \end{appendices}
+ %%%%%END APPENDIX SECTIONS%%%%%%%%%%%%%%%
+ 
+\end{document}
+

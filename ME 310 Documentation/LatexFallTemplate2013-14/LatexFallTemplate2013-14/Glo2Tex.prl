@@ -1,0 +1,61 @@
+# Perl script to take the glossary (.glo) file produced by the memoir class
+# in Latex and output a file that looks like a list of items for input into a Latex report.
+# To use: open the Terminal utility in the Mac Applications/Utilities folder,
+# "cd" to the current working directory, and then type something like:
+#  perl Glo2Tex.prl me310report.glo > glossaryterms.tex
+###
+# This script uses simple-minded sorting based
+# on numerical value of 1st character in the "term" part.
+# Useful reference: http://www.regular-expressions.info/perl.html
+# 17 July07 Mark Cutkosky
+# 28 Aug07 Revised to handle nested { } a bit more robustly.
+
+
+while (<>) {	
+
+# Search current line for "}} {\memogloref" Use "." for any char Use \\ for "\"
+# current line string "$_" gets what is before ($`) the match.
+if( /}}.{\\memgloref/ ){
+   $_ = $`;
+   }
+   
+#print("\n",$_);
+
+# Now search current line for "}}{\memoglodesc{"
+# $thedescription gets what is after the match ($')
+# current line string "$_" gets what is before ($`) the match.
+if ( /}}{\\memglodesc{/ ){
+  $thedescription = $';
+  $_ = $`;
+  }
+
+
+# Now search current line for "memogloterm{"
+# $theterm gets what is after the match ($')
+if ( /memgloterm{/ ){
+  $theterm = $';
+  }
+
+#print("\n \\item [",$theterm,"] ",$thedescription)
+
+
+#concatenate "theterm", "]" and $thedescription into a new string, "theitem" with null separator
+#push these item strings onto a growing array that we can sort
+
+$theitem =  join("", $theterm, "] ", $thedescription);
+push(@glossarray, $theitem)
+
+} #end while(<>)
+
+#Sort the array of strings (by 1st letter) and then shift them off
+#and print them one by one until the array has zero elements
+#Note \\ to quote the backslash character for printing.
+
+@alphabetic = sort @glossarray;
+
+while( $#alphabetic >= 0){
+  print("\\item[", shift(@alphabetic), "\n");
+  }
+
+#print(@alphabetic, ", top element: ", $#alphabetic,"\n");
+#print( shift(@alphabetic), ", elements: ", $#alphabetic);
