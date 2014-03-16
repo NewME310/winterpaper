@@ -109,52 +109,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Load file "Executive.tex" for the Executive summary.
 % Remember, this is a stand-alone section for executives to read.
-\include{Executive}
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-% TOC and LOF are automatically generated -- Note that sometimes have to "compile" Latex THREE
-% times to update the main .aux files, the TOC etc. files, and finally the PDF output with all changes
-% propagated to the printout.
-% Make Table of Contents title smaller than a normal Chapter heading:
-\renewcommand{\chaptitlefont}{\normalfont\Large\bfseries}
-\newpage
-\tableofcontents*  %asterisk to prevent it from getting a number
-
-% Optional Lists of Figures and Tables:
-\newpage
-\listoffigures*  %Note that for this you probably want to add the [short-headings] to captions.
-%\listoftables  %I decided to omit the LOT in this example.
-
-%Back to normal size for subsequent sections
-\renewcommand{\chaptitlefont}{\normalfont\Huge\bfseries}
-%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Set up the Glossary. The template is looking for a file called
-% "glossaryterms.tex" with glossary terms and definitions.
-% You can either edit this file manually or you
-% can use the Memoir glossary feature in which you insert items like
-%   \glossary{glossary term}{our definition of what the term means}
-% wherever you like, as you write your documentation.
-% When you run the report through Latex, it will create a ".glo" file like
-% "OurFallDocument.glo" which you can edit to create the file "glossaryterms.tex"
-% There is also perl script I made which will do the formatting for you. 
-%  perl Glo2Tex OurFallDocument.glo > glossaryterms.tex
-\newpage
-\section*{Glossary}
-\addcontentsline{toc}{section}{Glossary}
-\label{sec-glossary}
-\begin{description}
-\input{glossaryterms}   % input the list "glossaryterms.tex"
-\end{description}
-
-%%%%%% Example of an optionally printed "remark"
-\begin{remark}
-\color{blue}
-It's a sign of a successful team that the glossary becomes extensive. Define any non-obvious or invented terms. For example, if you reference something by an acronym, that might be a glossary term. Teams also coin terms to describe design features. Define such terms here.  Don't define obvious stuff (axle, keyboard).  
-
-See comments in me310report.tex if you want to generate a glossary semi-automatically from tagged keywords.
-\normalcolor
-\end{remark}
+\include{Front_Matter}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,7 +124,11 @@ See comments in me310report.tex if you want to generate a glossary semi-automati
 %This section is omitted from the Fall document
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{Design_Development}   %Results of benchmarking, need-finding, CFP, CEP etc.
+\include{Design_Requirements}   %Results of benchmarking, need-finding, CFP, CEP etc.
+
+\include{Design_Development}  %Results of benchmarking, need-finding, CFP, CEP etc.
+
+\include{Design_Specifications}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{Design_Vision}  %This section is just your proposal or "Vision" for Fall.
