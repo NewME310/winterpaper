@@ -36,7 +36,9 @@
 \contentsline {subsection}{\numberline {4.5.1}The Problem}{26}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}Functional Prototype}{29}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Wheelchair Storage}{29}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Inflatable Materials}{29}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Benchmarking}{29}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}Inflatable Materials}{29}{subsubsection.4.6.1.2}
+\contentsline {subsection}{\numberline {4.6.2}Wheelchair Tracking}{29}{subsection.4.6.2}
 \contentsline {chapter}{\chapternumberline {5}Vision}{30}{chapter.5}
 \contentsline {section}{\numberline {5.1}Accommodation System:}{30}{section.5.1}
 \contentsline {section}{\numberline {5.2}Seat configuration:}{30}{section.5.2}
