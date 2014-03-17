@@ -37,14 +37,14 @@ The main physical requirement concern the cabin and cargo hold dimensions and th
 Here are the characteristic dimensions of the seats of an Embraer jet E175 in economy class:
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/seat_dimensions_image_global}
+\includegraphics[width=7cm]{images/seat_dimensions_image_global.png}
 \caption{Seats of a typical Embraer E175 in economy class}
 \label{fig:seat_dimensions_1}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/seat_dimensions_image_top&front_view}
+\includegraphics[width=7cm]{images/seat_dimensions_image_topandfront_view.png}
 \caption{Characteristics of the seat}
 \label{fig: seat_dimensions_2}
 \end{figure}
@@ -76,12 +76,12 @@ In order to determine what are the constraints of our design space we wanted to 
 To take advantage of the available space inside the cabin our team wanted to analyze the volume and the space dedicated to carry-on luggage. All the dimensions of the luggage compartment are represented on \ref{fuselage_table} and their values are presented in \ref{luggage_compartment_table}.
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/luggage_compartment_table}
+\includegraphics[width=7cm]{images/luggage_compartment_table.png}
 \caption{Table presenting all the dimensions of the fuselage of an Embraer jet E175}
 \label{fig: luggage_compartment_table}
 \end{figure}
 
-From the previous analysis we noticed that only 52% of the luggage compartment is actually dedicated to carry-on storage. This is because the remaining 48% are dedicated to wires, light and air conditioned systems.
+From the previous analysis we noticed that only 52\% of the luggage compartment is actually dedicated to carry-on storage. This is because the remaining 48\% are dedicated to wires, light and air conditioned systems.
 
 \subsubsection*{Analysis of the cargo hold structure}
 
@@ -94,7 +94,7 @@ On \ref{aircraft_structure} we can see that the geometry of the cargo hold is an
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/aircraft_structure}
+\includegraphics[width=7cm]{images/aircraft_structure.png}
 \caption{Structure of an Embraer jet E170 - http://www.embraercommercialaviation.com/Pages/Ejets-170.aspx}
 \label{fig:aircraft_structure}
 \end{figure}
@@ -107,23 +107,23 @@ In order to make sure that the product we want to design to protect the wheelcha
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/cargo_hold_geometry_table}
+\includegraphics[width=7cm]{images/cargo_hold_geometry_table.png}
 \caption{Cargo hold characteristic dimensions}
 \label{fig: cargo_hold_geometry_table }
 \end{figure}
 
 & The characteristic dimensions of one of the biggest powered wheelchair that is available on the market (\ref{big_wheelchair}). Its dimensions are shown on \ref{wheelchair_geometry_table}.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=7cm]{images/big_wheelchair}
-\caption{One of the heaviest powered wheelchair of the market designed for obese disabled people (https://www.shermanoaksmedical.com/M94_p/m94-invacare.htm)}
-\label{fig: big_wheelchair}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=7cm]{images/big_wheelchair.png}
+%\caption{One of the heaviest powered wheelchair of the market designed for obese disabled people (https://www.shermanoaksmedical.com/M94_p/m94-invacare.htm)}
+%\label{fig: big_wheelchair}
+%\end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/seat_dimensions_table}
+\includegraphics[width=7cm]{images/seat_dimensions_table.png}
 \caption{Table presenting all the dimensions that define an airplane seat}
 \label{fig: seat_dimensions_table}
 \end{figure}
@@ -180,8 +180,8 @@ P = total load applied on the surface of the beam (distributed or punctual)
 c = core thickness (0.645” / 1.662 cm)
 w = width of panel (30.48” / 12 cm)
 
-For \[ P_{max} = 710 lbs – 3150 N} which is a typical value for the rupture of the core of a sandwich panel being used as aircraft floor, the maximum applied load we can tolerate is \[ \tau = 36.11 psi – 0.25MPa \]. 
-This is associated with a maximum stress of \[Stress_{max 2} = 36.11 psi – 0.25 MPa\] on the beam. This value is quite low because these beams are designed to withstand mainly traction and compression forces. They are poor in shear resistance.
+For $P_{max}$ = 710 lbs – 3150 N which is a typical value for the rupture of the core of a sandwich panel being used as aircraft floor, the maximum applied load we can tolerate is $ \tau = 36.11 psi – 0.25MPa $.
+This is associated with a maximum stress of $Stress_{max 2} = 36.11 psi – 0.25 MPa$ on the beam. This value is quite low because these beams are designed to withstand mainly traction and compression forces. They are poor in shear resistance.
 \subsubsection{Analysis of floor panels – flat wise tension/compression failure}
 We want to determine the core compressive limitation of the sandwich panel. Since we have a sandwich panel with thin face skin, the following equation can be used to determine the strength of the core:
 \[ \sigma = frac{P}{s.w} \]
@@ -189,9 +189,9 @@ with s = 144” / 365.8 cm and w = 32.3” / 82 cm
 \[ \sigma = 740 psi – 5.1 MPa \] is a typical value for the rupture of a sandwich panel being used as aircraft floor. This is directly associated with a maximum stress of \[ Stress_{max 3} = 740 psi – 5.1 MPa \] on the floor.
 
 In conclusion, the most sensitive parts of the cargo hold floor are the short beams:
-Stress_{max 2} < Stress_{max 3} < Stress_{max 1}
+$Stress_{max 2} < Stress_{max 3} < Stress_{max 1}$
  This is because these beams are designed to reinforce the cargo hold structure when it is in tension due to pressurization. Since these beam are design to withstand tension loads if a very heavy element of the cargo hold applies a shear force on them they are quite sensitive to it and do not resist it very well contrary to the floor panels and long beams which are specifically designed for this.
-As a consequence, we need to design our wheelchair protection system such that the distributed load applied on the cargo hold floor does not exceed \[ Stress_{max 2} = 36.11 psi – 0.25 MPa\]. It means that for a wheelchair such as \ref{heavy_wheelchair} we need to distribute the load over a minimum contact area with the floor which is 8 inches^2 – 51.61 cm^2. The ‘floor’ of our protection system must exceed this surface.
+As a consequence, we need to design our wheelchair protection system such that the distributed load applied on the cargo hold floor does not exceed \[ Stress_{max 2} = 36.11 psi – 0.25 MPa\]. It means that for a wheelchair such as \ref{heavy_wheelchair} we need to distribute the load over a minimum contact area with the floor which is 8 $inches^2$ – 51.61 $cm^2$. The ‘floor’ of our protection system must exceed this surface.
 
 \subsection{Physical Assumptions}
 
