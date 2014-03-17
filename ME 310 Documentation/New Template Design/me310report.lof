@@ -2,50 +2,50 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Main themes driving our solution}}{3}{figure.1.1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Scaled mock-up of seats on rails prototype}}{3}{figure.1.2}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces With Airlines adding more and more seats to their planes, it is increasingly hard to maneuver around the cabin. Source: http://www.examiner.com/article/airlines-may-charge-fat-people-higher-fares}}{10}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces With Airlines adding more and more seats to their planes, it is increasingly hard to maneuver around the cabin. \cite {2014airlines}}}{10}{figure.2.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Seats of a typical Embraer E175 in economy class}}{17}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Characteristics of the seat}}{17}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Table presenting all the dimensions that define an airplane seat}}{18}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Characteristic dimensions of the fuselage of an Embraer jet E175}}{18}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Table presenting all the dimensions of the fuselage of an Embraer jet E175}}{18}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Table presenting all the dimensions of the fuselage of an Embraer jet E175}}{19}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Structure of an Embraer jet E170 - http://www.embraercommercialaviation.com/Pages/Ejets-170.aspx}}{19}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Cargo hold characteristic dimensions}}{20}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Table presenting all the dimensions that define an airplane seat}}{20}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Different types of elements that constitute the cargo hold structure from http://www.strutpatent.com/patent/07338013/floor-for-aircraft}}{21}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Key parameters for the structural analysis of the cargo hold floor stress}}{22}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Contact area between the wheelchair and the cargo hold floor: its causes an important stress on the aircraft structure}}{25}{figure.3.12}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Seats of a typical Embraer E175 in economy class}}{18}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Characteristics of the seat}}{18}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Table presenting all the dimensions that define an airplane seat}}{19}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Characteristic dimensions of the fuselage of an Embraer jet E175}}{19}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Table presenting all the dimensions of the fuselage of an Embraer jet E175}}{19}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Table presenting all the dimensions of the fuselage of an Embraer jet E175}}{20}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Structure of an Embraer jet E170 - http://www.embraercommercialaviation.com/Pages/Ejets-170.aspx}}{20}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Cargo hold characteristic dimensions}}{21}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Table presenting all the dimensions that define an airplane seat}}{21}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Different types of elements that constitute the cargo hold structure from http://www.strutpatent.com/patent/07338013/floor-for-aircraft}}{22}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Key parameters for the structural analysis of the cargo hold floor stress}}{23}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Contact area between the wheelchair and the cargo hold floor: its causes an important stress on the aircraft structure}}{26}{figure.3.12}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Possible ideas for a new cabin configuration}}{28}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Current pod hotel layout in Japan. Source: http://montaraventures.com/blog/2008/06/08/pod-hotel/}}{29}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of cabin layout that integrates both chairs and beds and does not decrease the total number of seats. Source: http://www.gizmag.com/future-of-air-travel-comfortable-seating/17751/}}{29}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Example of cabin layout with built in beds. Source: http://www.aviationinsurors.com/chair.html}}{30}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Vertical seating being designed for airplane chairs. Source: http://www.dailymail.co.uk/news/article-1215081/Packed-like-sardines-New-aircraft-design-plans-seat-passengers-face-face.html}}{30}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Plane section dedicated to sleep and relaxation with two configurations: take-off/landing (left) and cruise (right)}}{31}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Plane section dedicated to family with two configurations: take-off/landing (left) and cruise (right)}}{31}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Plane section dedicated to sports and physical training with two configurations: take-off/landing (left) and cruise (right)}}{32}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Plane section dedicated to work in a cosy atmosphere with two configurations: take-off/landing (left) and cruise (right)}}{32}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Plane section dedicated to people who need easily accessible seats}}{33}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Vertical seating being designed for airplane chairs. Source: http://www.dailymail.co.uk/news/article-1215081/Packed-like-sardines-New-aircraft-design-plans-seat-passengers-face-face.html}}{34}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Hammock transfer to enable people to go from the airport chair to their seat}}{35}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Comb seats that would facilitate the transfer from the airport chair to the seat}}{35}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Sliding seat allowing people with reduced mobility to reach their seat without assistance}}{35}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Carousel system conveying the seats from the entrance of the plane to their appropriate location}}{35}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Design that allows for easier luggage storage for all passengers Source: http://www.gizmag.com/future-of-air-travel-comfortable-seating/17751/}}{37}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Ideal height for reaching objects for both sitting and standing passengers. Source: https://law.resource.org/pub/nz/ibr/nzs.4121.2001.svg.html}}{37}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Vertical cabin configuration with luggage storage}}{38}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Harness used to get disabled out of the bath.}}{38}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Walker that could be adapted to become a better aisle chair.}}{39}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Our first new cabin layout for boarding the plane}}{40}{figure.4.21}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Standard wheelchair dimensions}}{40}{figure.4.22}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Standard Embraer plane cabin layout}}{40}{figure.4.23}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces New cabin layout with angled seats for boarding}}{41}{figure.4.24}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Our luggage compartment which is accessible on demand by pressing a button}}{41}{figure.4.25}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Tweet from Esther Appleyard-Fox explaining how she feels when she is transferred when she flies. }}{44}{figure.4.26}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Tweet from David Gillon on Trailblazers study that shows 60\% of wheelchairs are broken in airline travel. }}{44}{figure.4.27}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Anecdote from a Trailblazer that had her wheelchair broken during flight.}}{45}{figure.4.28}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Possible ideas for a new cabin configuration}}{29}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Current pod hotel layout in Japan. Source: http://montaraventures.com/blog/2008/06/08/pod-hotel/}}{30}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of cabin layout that integrates both chairs and beds and does not decrease the total number of seats. Source: http://www.gizmag.com/future-of-air-travel-comfortable-seating/17751/}}{30}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Example of cabin layout with built in beds. Source: http://www.aviationinsurors.com/chair.html}}{31}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Vertical seating being designed for airplane chairs. Source: http://www.dailymail.co.uk/news/article-1215081/Packed-like-sardines-New-aircraft-design-plans-seat-passengers-face-face.html}}{31}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Plane section dedicated to sleep and relaxation with two configurations: take-off/landing (left) and cruise (right)}}{32}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Plane section dedicated to family with two configurations: take-off/landing (left) and cruise (right)}}{32}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Plane section dedicated to sports and physical training with two configurations: take-off/landing (left) and cruise (right)}}{33}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Plane section dedicated to work in a cosy atmosphere with two configurations: take-off/landing (left) and cruise (right)}}{33}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Plane section dedicated to people who need easily accessible seats}}{34}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Vertical seating being designed for airplane chairs. Source: http://www.dailymail.co.uk/news/article-1215081/Packed-like-sardines-New-aircraft-design-plans-seat-passengers-face-face.html}}{35}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Hammock transfer to enable people to go from the airport chair to their seat}}{36}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Comb seats that would facilitate the transfer from the airport chair to the seat}}{36}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Sliding seat allowing people with reduced mobility to reach their seat without assistance}}{36}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Carousel system conveying the seats from the entrance of the plane to their appropriate location}}{36}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Design that allows for easier luggage storage for all passengers Source: http://www.gizmag.com/future-of-air-travel-comfortable-seating/17751/}}{38}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Ideal height for reaching objects for both sitting and standing passengers. Source: https://law.resource.org/pub/nz/ibr/nzs.4121.2001.svg.html}}{38}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Vertical cabin configuration with luggage storage}}{39}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Harness used to get disabled out of the bath.}}{39}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Walker that could be adapted to become a better aisle chair.}}{40}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Our first new cabin layout for boarding the plane}}{41}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Standard wheelchair dimensions}}{41}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Standard Embraer plane cabin layout}}{41}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces New cabin layout with angled seats for boarding}}{42}{figure.4.24}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Our luggage compartment which is accessible on demand by pressing a button}}{42}{figure.4.25}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Tweet from Esther Appleyard-Fox explaining how she feels when she is transferred when she flies. }}{45}{figure.4.26}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Tweet from David Gillon on Trailblazers study that shows 60\% of wheelchairs are broken in airline travel. }}{45}{figure.4.27}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Anecdote from a Trailblazer that had her wheelchair broken during flight.}}{46}{figure.4.28}
 \contentsline {figure}{\numberline {4.29}{\ignorespaces Picture of a broken wheelchair after a flight.}}{46}{figure.4.29}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Tweet from Josie Verguese about her experience when her wheelchair did not make it to her destination.}}{46}{figure.4.30}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Tweet from Josie Verguese about her experience when her wheelchair did not make it to her destination.}}{47}{figure.4.30}
 \addvspace {10pt}
 \addvspace {10pt}
