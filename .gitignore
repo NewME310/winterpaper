@@ -21,7 +21,7 @@
 *.mtc1
 *.out
 *.synctex.gz
-*.pdf
+me310report.pdf
 
 *.gz(busy)
 #################
