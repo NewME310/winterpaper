@@ -755,7 +755,7 @@ It helped us identify three main issues :
 
 The Dark Horse mission focused on the reconfiguration of the cabin to meet the passengers' needs.  For Funky, we decided to focus on how the user controls their immediate environment in the airplane and how that can be defined.  We decided to create a subsystem of the airplane chair that consisted of the seat, the TV screen in front of the passenger, the overhead bin above the head of the passenger, and the armrest on both sides.
 
-\subsubsection*{Version 1: Controlling the Environment} 
+\subsubsection{Version 1: Controlling the Environment} 
 Version 1 focused on controlling the environment by changing the methods in which the passenger can use the controls or buttons at their seats.  Today, the passenger has to reach above his head on the overhead bin compartment to call the flight attendant, to change the air flow and direction, or to turn on or off the light.  This is not an ideal arrangement for our users since some of them do not have the upper body strength that is needed to lift themselves up to touch the buttons.  We decided that we needed to bring the controls down to them and make them easier to reach and more accessible.  The controls should be an assistive technology, not another aspect of the flying experience that makes our users dependent on other passengers.   
 
 We first envisioned the controls being placed upon the armrest through buttons, scroll bars, track pads, and other mechanisms. We looked into what is being done within the business classes on most flights.  Since we are focused on the economy class, we thought that if a solution is aready present in the business class, we could just integrate that same solution into the economy class. \ref{fig:ArmrestsControls1.jpg} and \ref{fig:ArmrestsControls2.jpg} show examples of controls on the armrests.  The first set of controls is used to control the position and the firmness/softness of the seat.  We thought about integrating  something similar and giving our user the ability to change these aspects of their seat given that different disabilities have different support needs. However, we focused on having the basic controls of the lights, the air conditioning, the flight attendant button for our design. 
@@ -800,7 +800,7 @@ The use of individual TV screens on airplanes is increasing due to the demand of
   \label{fig:TouchscreenTV.jpg}
 \end{figure}
 
-\subsubsection*{Version 2: Controlling the Environment with a New Armrest and Controls}
+\subsubsection{Version 2: Controlling the Environment with a New Armrest and Controls}
 
 Version 1 on Funky showed us that there were more areas that needed to be improved within our design subsystem.  We decided that we would further develop the controls but also look into ways to redesign the armrest.  Why did the armrest have to be like it is? Can it move up and down another way? Can we design something with the same functionality but to be more accessible and more comfortable?
 
@@ -869,7 +869,7 @@ The final area we researched was the armrest aids for persons with limited mobil
 \subsection{Description of the prototype}
 
 
-\subsubsection*{Controls}
+\subsubsection{Controls}
 
 Funky allowed us to create different interfaces for interacting with the cabin controls in order to examine the level of independence and control a person with reduced mobility experiences with each. After speaking to our users, we know that reaching the controls on the ceiling can be very hard, especially if a passenger does not have much upper body strength. Thus, we wanted to find a way to bring the controls to them and minimizing the effort exerted into changing their cabin environment.  Our team focused on 4 main areas for inputs shown in Figure \ref{fig:ControlArchitecture.jpg}: buttons on the armrest, GUI on screen, GUI on personal device and automated controls.  On the backend, we had an Arduino controlling the lights, the fan and the flight attendant light. 
 
@@ -881,7 +881,7 @@ Funky allowed us to create different interfaces for interacting with the cabin c
   \label{fig:ControlArchitecture.jpg}
 \end{figure}
 
-\subsubsection*{Buttons on armrest}
+\subsubsection{Buttons on armrest}
 
 \begin{figure}[h]
   \centering
@@ -916,13 +916,13 @@ This GUI was utilized two test two different scenarios, having the ability to co
 \end{figure}
 
 
-\subsubsection*{Automated Controls}
+\subsubsection{Automated Controls}
 
 After exploring different inputs a user could trigger to control their environment, our team decided to take a step back and go back to the basics. Why does a user want to turn their light on? Why do they want their fan off? It seemed to us that there are specific needs a user is trying to satisfy when changing these aspects of their environment, so what if the cabin could anticipate these needs and change the cabin for them? Would they still feel in control and independent? 
 
 We decided to test out our hypothesis by assuming that people want to turn on the lights when they want to read. Therefore, if a passenger brings out a book, the light should automatically turn on. We tested this by using an image detection algorithm in MATLAB that would use the camera to detect if a certain color was present and would then trigger a command to turn the light on. We then got a light blue book and used this program to turn the lights on when the book appeared and off when the book disappeared. While this is not incredibly reliable or robust at the moment, we envisioned that if the cabin could sense when you had paper, or text or even your hands in a certain “reading” position, the light would turn on. Similarly, we could imagine using different types of remote or tactile temperature sensors to control the fan.
 
-\subsubsection*{Armrest}
+\subsubsection{Armrest}
 After our research into different types of armrests we decided to prototype one we hadn't seen - an armrest that can collapse downwards into the space between two seats. There were several reasons for pursuing this design, including that the controls would still be reachable and that the user could raise and lower the armrest without having to twist their body.
 
 Our prototype, shown in Figure \ref{fig:armrest_funky}, was constructed primarily from an Ikea Alrik swivel chair, which provided the mechanism for linear actuation. We sawed off the sides of the seat, using what remained as the physical armrest. Because the chair is designed for a person to sit on we also added springs to make it easier to lower the armrest without applying as much force.
@@ -944,14 +944,14 @@ Version 2 of the funky prototype was the direct evolution of version 1 since we 
 
 We invited José Luis Naranjo Montoya, a 28 year old T6-complete paraplegic to share our vision with him and to get user's feedback about our version 2 funky prototype which was made of two parts : the armrest and the mechanism we designed to make it lower and raise, and the controls of the environment that we wanted initially to centralize in the armrest.
 
-\subsubsection*{User's feedback about the armrest mechanism we designed:}
+\subsubsection{User's feedback about the armrest mechanism we designed:}
 
 When we decided to redesign the armrest and the mechanism that makes it lower and raise, we identified two main functions for the armrest: rest the passenger's arm and divide the space. But while testing our mechanism with José we realized that we had neglected one very important function of the armrest : being used as a handle by people with reduced mobility. Indeed, disabled people often use the armrest as a handle for support when they get in the cabin and shift in their seat. Therefore the armrest has to be reliable since our user relies on it to support his/her weight, and this is obviously something we learnt from José and that made us change our design priorities concerning the armrest.
 
 Another important point we also learned from José was about the location of the armrest. It needs to be flush with the seats when it is lowered otherwise it doesn't make getting into the seats that much easier. This can seem to be in contradiction with the previous point since on the one hand our user uses the armrest as a handle but on the other hand he does not want it to be an obstacle between him and his seat. In fact, ideally our user would like to have the aisle armrest flush with the seat but the other armrest up to use it as a handle. For our user the two armrest are not equal and this way of thinking opened for us a whole new design space. 
 
 
-\subsubsection*{User's feedback about the control systems we designed:}
+\subsubsection{User's feedback about the control systems we designed:}
 
 \begin{easylist}[itemize]
 
@@ -980,7 +980,7 @@ Imagine you are a wheelchair user. You arrive at your gate, ready to board your 
 The following sections will detail the user quotes and research that led us to choosing both of these directions.  
 \\
 
-\subsubsection*{Mobility In the Cabin}
+\subsubsection{Mobility In the Cabin}
 
 In order to comfirm the need for improving mobility inside the cabin, we asked our contacts to fill out a survey that would give us a better idea of what exactly would be the most helpful for them. The full survey responses can be found in Appendix \ref{"SOMEONE FILL THIS IN? IM NOT SURE HOW THE APPENDIX WORKS, can you add pdfs to it?"} 
 When asked about the prospect of having an ``on demand"  powered aisle chair, users were keen on the independence it would provide as it would allow them to ``board the plane at [their] own pace and go to the restroom when [they] please." One of our respondants stated that such a device would allow them to ``feel like a passenger for a change and not a sack of coffee beans". This quote clearly depicts the struggle users currently go through when they give up their mobility device and with it, their independence.
@@ -998,7 +998,7 @@ Finally, we decided to delve deeper into the transfer process. One of our interv
 \end{figure}
 
 
-\subsubsection*{Wheelchair Storage}
+\subsubsection{Wheelchair Storage}
 
 As we were looking for more data to substantiate our claim that mobility in the cabin was, in fact, the problem to solve, we stumbled upon another huge problem. During our interview with Aubrie Lee, a student in Product Design at Stanford University who is also a wheelchair user, she mentioned that while mobility inside the cabin is a problem, it is such a short part of her experience that she hardly remembers it as being painful. Part of this is due to the fact that when she travels with her dad he carries her down the aisle which I am sure can be more comforting than dehumanizing. However, she emphasized that``the most emotional part of [her] flying experience is having to give up [her] chair and waiting for them to give it back." For her, giving up her chair is ``a huge source of anxiety - as soon as it is out of [her] sight, [she doesn't] know where it is", whether it is going to come back to her unharmed or whether it is even going to make it to her destination. 
 
@@ -1166,7 +1166,7 @@ Winter quarter was brought to a finish with the third and final prototyping miss
 Before prototyping our first wheelchair storage device we did a larger search both for existing wheelchair storage and protection devices as well as methods for securing wheelchairs. We found several relevant patents for protection devices as well as regulations for securement, relating primarily to bus travel. \\
 
 \noindent\textbf{Securement}\\
-The United States Department of Transportation's Federal Motor Carrier Safety Administration publishes a wide array of regulations. Included amongst the regulations governing school bus safety, Federal Motor Vehicle Safety Standards \textsection 571.222 \cite{fmvs222}, are a number of requirements for how wheelchairs must be secured while in transit. The section requires that the wheelchair is secured in four locations, with an additional three point mounting required to secure the student. Similar topics are covered in further regulations, such as Title 49 \textsection 38.23 \cite{ecfr}. Figure \ref{fig:tie-down} demonstrates the general setup. 
+The United States Department of Transportation's Federal Motor Carrier Safety Administration publishes a wide array of regulations. Included amongst the regulations governing school bus safety, Federal Motor Vehicle Safety Standards \textsection 571.222 \cite{fmvs222}, are a number of requirements for how wheelchairs must be secured while in transit. The section requires that the wheelchair is secured in four locations, with an additional three point mounting required to secure the student. Similar topics are covered in further regulations, such as Title 49 \textsection 38.23 \cite{ecfr}. Figure \ref{fig:tie-down} demonstrates the general setup. \\
 
 \begin{figure}[h]
   \centering
@@ -1285,8 +1285,8 @@ As the Funktional prototype was a relative success the team decided to step forw
 
 \subsubsection{Benchmarking}
 
-\emph{Door Lock}
-	This mechanism below (figure xx) can be fixed on the ground and is normally used to lock doors. On our case, this mechanism could be fixed to the cushion, allowing the user to effectively lock his cushion by rotating the key.
+\noindent\emph{Door Lock}\\
+This mechanism below (figure xx) can be fixed on the ground and is normally used to lock doors. On our case, this mechanism could be fixed to the cushion, allowing the user to effectively lock his cushion by rotating the key.\\
 
 \begin{figure}[h]
 \centering
@@ -1295,8 +1295,8 @@ As the Funktional prototype was a relative success the team decided to step forw
 \label{fig:door_locking}
 \end{figure}
 
-\emph{Multi purpose lock}
-The multi purpose lock (figure xx) can be used to lock several mechanisms such as doors and windows. In order to do so, the user has to open the latch showed on the right part of the image and hook it to the piece represented on the left part of the image.
+\noindent\emph{Multi purpose lock}\\
+The multi purpose lock (figure xx) can be used to lock several mechanisms such as doors and windows. In order to do so, the user has to open the latch showed on the right part of the image and hook it to the piece represented on the left part of the image.\\
 
 \begin{figure}[h]
 \centering
@@ -1306,9 +1306,9 @@ The multi purpose lock (figure xx) can be used to lock several mechanisms such a
 \end{figure}
 
 
-\emph{Seat slide adjustment mechanism}
+\noindent\emph{Seat slide adjustment mechanism}\\
 
-This mechanism (image xx) is a horizontal adjustment to use with a chair having a base, a seat supported on the base and a seat back. The mechanism includes a first plate that is to be coupled to the base and a second plate that is coupled to the seat. The second plate includes a mating portion. The second plate is slidably coupled to the first plate such that the second plate can move relative to the first plate. The mechanism also includes a lever mechanism. The lever mechanism includes a mating portion that selectively disengages from the mating portion of the second plate to allow the second plate to move relative to the first plate.
+This mechanism (image xx) is a horizontal adjustment to use with a chair having a base, a seat supported on the base and a seat back. The mechanism includes a first plate that is to be coupled to the base and a second plate that is coupled to the seat. The second plate includes a mating portion. The second plate is slidably coupled to the first plate such that the second plate can move relative to the first plate. The mechanism also includes a lever mechanism. The lever mechanism includes a mating portion that selectively disengages from the mating portion of the second plate to allow the second plate to move relative to the first plate.\\
 
 \begin{figure}[h]
 \centering
@@ -1317,8 +1317,7 @@ This mechanism (image xx) is a horizontal adjustment to use with a chair having 
 \label{fig:patent}
 \end{figure}
 
-
-\emph{Ideation}
+\subsubsection{Ideation}
 Based on the benchmarking we did, we did a brainstorming session (Figure 43) to find better solutions for our project. As we were brainstorming, we noticed that, ideally, the movement of the armrests should be associated with the latching mechanism. The reason for this is that the user has necessarily to lift his armrest in order to complete a transfer. 
 
 From this ideation process, two main solutions were proposed:
@@ -1346,7 +1345,7 @@ By analyzing both options, we noticed that the first one added unnecessary weigh
 \end{figure}
 
 
-\emph{Construction}
+\subsubsection{Construction}
 By using some aluminum cylinders leftovers from the workshop and some pieces of wood we assembled a couple of retractable armrests (Figure 41) that could be attached to funktional prototype. We also used a 3D printer to create a pin that literally latches the cushion.
 
 \begin{figure}[h]
@@ -1384,7 +1383,7 @@ The rear view of the mechanism is shown below on Figure 48:
 \end{figure}
 
 
-\emph{Learnings}
+\subsubsection{Learnings}
 
 \begin{itemize}
 	\item It is possible, quite easy and comfortable to make a lateral transfer.
