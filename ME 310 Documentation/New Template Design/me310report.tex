@@ -22,6 +22,8 @@
 \usepackage{color}               % support for colored fonts
 \usepackage{url}  \urlstyle{same}     % deal with url strings in bibliography
 
+\usepackage[final]{pdfpages}
+
 %Optional fonts if you don't like the default in Latex
 %\usepackage[T1]{fontenc}
 %\usepackage{mathptmx}  %This will give you Times Roman, like default in MS Word.
@@ -53,7 +55,7 @@
 %Replace the strings below with what's right  for you.
 
 %%Insert your Document Title here. Use \\ to force a newline.
-\title{Redesigning the Flying Experience for Persons with Disabilities}
+\title{Redesigning the Flying Experience for Passengers with Limited Mobility}
 
 \team{Team: Embraer} 		% Insert your Team Project Name here.
 
@@ -96,16 +98,18 @@
 %7 cm is about max figure height before messing up title spacing.
 %If making your own fancy coverpage (e.g. in Photoshop) then comment out 
 %the \includegraphics{ } and use the \vspace{ } command.
-\begin{figure}[t]
-\centering
+%\begin{figure}[t]
+%\centering
   %An example cover image, from 2008 ME310 Kodak project
-  \includegraphics[height= 7cm]{Figures/Ch1frontmatter/KodakThing.pdf}
+%  \includegraphics[height= 7cm]{images/Top_Photo.jpg}
 %\vspace{3 cm}    %Use this instead when you have no cover picture 
-\end{figure}
+%\end{figure}
+
+\includepdf[fitpaper=true]{Cover}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Make the title page using arguments defined above.
-\titlep
+%\titlep
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Load file "Executive.tex" for the Executive summary.
@@ -153,7 +157,7 @@
 
 %%%%%BEGIN APPENDIX SECTIONS%%%%%%%%%%%%%%%
 \begin{appendices}
-% \include{Appendix1}       % There could be multiple appendix files like this
+ \include{Appendix1}       % There could be multiple appendix files like this
  \end{appendices}
  %%%%%END APPENDIX SECTIONS%%%%%%%%%%%%%%%
  
