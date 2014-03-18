@@ -9,32 +9,34 @@ In this section we tried to explain and quantify what our design should do and m
 
 \subsection{Functional Constraints}
 
-The ideal flight experience for disabled passengers should not require the intervention of flight attendants. Our user should be able to do everything on his own once inside the cabin. Any system that provides our user with more independence has to be safe and secure to use and should have be replaced at the same time as other items inside the cabin. This means that any new system that we could implement inside the cabin should be able to last at least five years which is the period of time associated with cabin replacement for most airlines.
-Our design has to be inconspicuous and should not make our user feel singled out. Disabled people are different, they know it but they do not need to be reminded it and they don't want to be separated from their travel comapnions.
+The ideal flight experience for disabled passengers should not require the intervention of flight attendants. Our user should be able to do everything on his own once inside the cabin. Any system that provides  users with more independence has to be safe and secure to use. Additionally, it should only have to be replaced when the rest of the cabin is, as well. This means that any new system that we could implement inside the cabin should be able to last at least five years, which is the period of time associated with cabin replacement for most airlines.
+Our design has to be inconspicuous and should not make our user feel singled out. Disabled people are different, they know it but they do not need to be reminded and they don't want to be separated from their travel comapnions.
 
 \subsection{Functional Assumptions}
 
-We assumed that the disabled passengers we are designing for have a minimum core strength that enables them to transfer from their own wheelchair to another aisle wheelchair or to their seat. They are able to use their arms for tranfering or clicking on buttons or using a smartphone.
+We assumed that the disabled passengers we are designing for have a minimum core strength that enables them to transfer from their own wheelchair to another aisle wheelchair or to their seat. They are able to use their arms for tranferring, clicking on buttons or using a smartphone.
 
-We also assumed that disbled passengers have a smartphone from which they can download apps that would help them getting more independence during their flight experience.
+We also assumed that disbled passengers have a smartphone for which they can download apps that would help them gain more independence during their flight experience.
 
-We assumed that our user would be traveling with at least one travel companion from who he does not want to be separated from. He also travels with at least one carry-on that he needs to store in the luggage compartment in the cabin.
+We assumed that our users may be traveling with at least one travel companion whom they don't want to be separated from. He also travels with at least one carry-on that he needs to store in the luggage compartment in the cabin.
 
 \subsection{Functional Opportunities}
 
-These functional constraints and assumptions let us with a design space that gives us the opportunity to explore autonomous devices like a powered wheelchiar, or automated controls for tranfer, environemental control, wheelchair storage.
+These functional constraints and assumptions left us with a design space that gives us the opportunity to explore autonomous devices like a powered wheelchiar, or automated controls for transfer, environmental control, and wheelchair storage.
 
-It also gives us the opportunity to explore different cabin layouts and new protection devices for wheelchair storage. Almost nothing has be done in terms of automation and accessibility inside the cabin so it gives us a lot of room for improvement.
+It also gives us the opportunity to explore different cabin layouts and new protection devices for wheelchair storage. Almost nothing has been done in terms of automation and accessibility inside the cabin so it gives us a lot of room for improvement.
 
 \section{Physical Requirements}
 
-The main physical requirement concern the cabin and cargo hold dimensions and the weight of any device we would like to add inside the aircraft. In order to understand are those limitations we conducted a very detailed analysis of both the cabin configuration and the cargo hold structure.
+The main physical requirements concern the cabin and cargo hold dimensions and the weight of any device we would like to add inside the aircraft. In order to understand these limitations we conducted a very detailed analysis of both the cabin configuration and the cargo hold structure. We have assumed that our design will need to fit in a currently existing fuselage.
 
 \subsection{Physical Constraints}
 
 \subsubsection*{Analysis of aircraft dimensions}
-\textbf{Dimensions for the seats:}
-Here are the characteristic dimensions of the seats of an Embraer jet E175 in economy class:
+
+\emph{Dimensions for the seats:}
+
+The characteristic dimensions of the seats of an Embraer jet E175 in economy class are shown in Figures \ref{fig:seat_dimensions_1}, \ref{fig:seat_dimensions_2}, and \ref{fig:seat_dimensions_table}. \\
 \begin{figure}[h]
 \centering
 \includegraphics[width=7cm]{images/seat_dimensions_image_global.png}
@@ -46,18 +48,20 @@ Here are the characteristic dimensions of the seats of an Embraer jet E175 in ec
 \centering
 \includegraphics[width=12cm]{images/seat_dimensions_image_topandfront_view.png}
 \caption{Characteristics of the seat}
-\label{fig: seat_dimensions_2}
+\label{fig:seat_dimensions_2}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=12cm]{images/seat_dimensions_table}
 \caption{Table presenting all of the dimensions that define an airplane seat}
-\label{fig: seat_dimensions_table}
+\label{fig:seat_dimensions_table}
 \end{figure}
 
-\textbf{Dimensions of the fuselage:}
-In order to determine what are the constraints of our design space we wanted to have a precise map of the aircraft fuselage and its available space for passengers. Here are the characteristic dimensions of the fuselage of an Embraer jet E175.
+\noindent\emph{Dimensions of the fuselage:}
+
+In order to determine what are the constraints of our design space we wanted to have a precise map of the aircraft fuselage and its available space for passengers. Figures \ref{fig: fuselage_dimensions} and \ref{fig:fuselage_table} contain the characteristic dimensions of the fuselage of an Embraer jet E175.\\
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=7cm]{images/fuselage_dimensions}
@@ -72,8 +76,10 @@ In order to determine what are the constraints of our design space we wanted to 
 \label{fig:fuselage_table}
 \end{figure}
 
-\textbf{Dimensions of the luggage compartment inside the cabin:}
-To take advantage of the available space inside the cabin our team wanted to analyze the volume and the space dedicated to carry-on luggage. All of the dimensions of the luggage compartment are represented on \ref{fig:fuselage_table} and their values are presented in \ref{fig:luggage_compartment_table}.
+\noindent\emph{Dimensions of the luggage compartment inside the cabin:}
+
+To take advantage of the available space inside the cabin our team wanted to analyze the volume and the space dedicated to carry-on luggage. All of the dimensions of the luggage compartment are represented on \ref{fig:fuselage_table} and their values are presented in \ref{fig:luggage_compartment_table}.\\
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=7cm]{images/luggage_compartment_table.png}
@@ -83,14 +89,15 @@ To take advantage of the available space inside the cabin our team wanted to ana
 
 From the previous analysis we noticed that only 52\% of the luggage compartment is actually dedicated to carry-on storage. This is because the remaining 48\% are dedicated to wires, light and air conditioned systems.
 
-\subsubsection*{Analysis of the cargo hold structure}
+\subsubsection*{Analysis of the Cargo Hold Structure}
 
-\textbf{Characteristics of the material used for the cargo hold floor}
-In order to protect the passengers’ wheelchairs from damages, our team decided to design a structure that would enclose the wheelchair while stored in the cargo hold. In order to understand what are the constraints the will have to deal with during our design process we decided to analyze both the geometric and structural constraints caused by the aircraft structure.
+\emph{Characteristics of the material used for the cargo hold floor:}
 
-\textbf{Geometric constraints due the cargo hold shape:}
+In order to protect the passengers' wheelchairs from damages, our team decided to design a structure that would enclose the wheelchair while stored in the cargo hold. In order to understand what the constraints are that we will have to deal with during our design process we decided to analyze both the geometric and structural constraints caused by the aircraft structure.
 
-On \ref{fig:aircraft_structure} we can see that the geometry of the cargo hold is an important limitation for our design since the semi elliptical shape considerably reduces the volume and height available for storage.
+\noindent\emph{Geometric constraints due the cargo hold shape:}
+
+On \ref{fig:aircraft_structure} we can see that the geometry of the cargo hold is an important limitation for our design since the semi elliptical shape considerably reduces the volume and height available for storage.\\
 
 \begin{figure}[h]
 \centering
@@ -103,7 +110,7 @@ In order to make sure that the product we want to design to protect the wheelcha
 
 \begin{easylist}[itemize]
 
-& The cargo hold characteristic dimensions that are shown on \ref{fig:cargo_hold_geometry_table} 
+& The cargo hold characteristic dimensions that are shown in Figure \ref{fig:cargo_hold_geometry_table} 
 
 \begin{figure}[h]
 \centering
@@ -112,7 +119,7 @@ In order to make sure that the product we want to design to protect the wheelcha
 \label{fig:cargo_hold_geometry_table}
 \end{figure}
 
-& The characteristic dimensions of one of the biggest powered wheelchair that is available on the market (\ref{fig:heavy_wheelchair}). Its dimensions are shown on \ref{fig:wheelchair_geometry_table}.
+& The characteristic dimensions of one of the biggest powered wheelchair that is available on the market (Figure \ref{fig:heavy_wheelchair}). Its dimensions are shown in Figure \ref{fig:wheelchair_geometry_table}.
 
 \begin{figure}[h]
 \centering
@@ -130,13 +137,13 @@ In order to make sure that the product we want to design to protect the wheelcha
 
 \end{easylist}
 
-By comparing the wheelchair dimensions to the cargo hold dimensions, we noticed that the headrest has to be remove otherwise the wheelchair is too high to fit the cargo hold. Fortunately, most of the heavy powered wheelchairs are equipped with removable parts in order to minimize the size and weight of the wheelchair while this latter is transported from one place to another.
+By comparing the wheelchair dimensions to the cargo hold dimensions, we noticed that the headrest has to be removed so that the wheelchair is not too high to fit inside the cargo hold. Fortunately, most of the heavy powered wheelchairs are equipped with removable parts in order to minimize the size and weight of the wheelchair while this latter is transported from one place to another.
 
-One the headrest is removed this wheelchair can be stored in the cargo hold. Its width is lower than the doors’ width so it can enter the cargo hold. Even if the height of the wheelchair is higher than the cargo hold door’s height, by tilting the wheelchair airline employees are able to make it go inside the cargo hold.
+Once the headrest is removed this wheelchair can be stored in the cargo hold. Its width is lower than the door's width so it can enter the cargo hold. Even if the height of the wheelchair is higher than the cargo hold door's height, by tilting the wheelchair airline employees are able to make it go inside the cargo hold.
 
-To conclude about the geometric constraints of the cargo hold, given that the biggest wheelchairs can be stored inside the cargo hold of an Embraer jet, the only restriction we really need to take into account is the clearance between the product we will design to protect the structure and the size of the door. For instance, if we decide to use inflatable material to protect the wheelchair, we may have to blow it up inside the cargo hold and not outside in order to make sure the package size will still be smaller than the door size.
+To conclude about the geometric constraints of the cargo hold, given that the biggest wheelchairs can be stored inside the cargo hold of an Embraer jet, the only restriction we really need to take into account is the clearance between the product we will design to protect the structure and the size of the door. For instance, if we decide to use inflatable material to protect the wheelchair, we may have to blow it up inside the cargo hold and not outside in order to make sure the package size will still be smaller than the door size.\\
 
-\textbf{Structural constraints due the cargo hold structure:}
+\noindent\emph{Structural constraints due the cargo hold structure:}
 
 As previously mentioned when our team interviewed the Air France employee in charge of cargo hold management, wheelchairs can be very heavy and the contact area with the cargo floor is very small. This can generate stress that the cargo hold floor will not be able to withstand. In order to design a product that will protect the wheelchair inside the cargo hold, our team needed to analyze the stress limitations of the cargo hold floor to take them into account in our design process.
 
@@ -153,7 +160,7 @@ On \ref{fig: types_beam_cargo_hold} we can see the three different types of beam
 \begin{figure}[h]
 \centering
 \includegraphics[width=7cm]{images/types_beam_cargo_hold}
-\caption{Different types of elements that constitute the cargo hold structure THIS IS A FAULTY LINK http://www.strutpatent.com/patent/07338013/floor-for-aircraft}
+\caption{Different types of elements that constitute the cargo hold structure \cite{vetillard2008floor}}
 \label{fig: types_beam_cargo_hold}
 \end{figure}
 
@@ -174,7 +181,8 @@ h = panel thickness (0.66 inches / 1.7 cm) \\
 
 For $ P_{max}$ = 490 lbs or 2170 N which is a typical value for the rupture of a sandwich panel being used as aircraft floor, the maximum skin stress we can tolerate is $ \sigma_{s}$= 6222 psi or 42.9 MPa.
 This is associated with a maximum stress of $Stress_{max 1}$ = 6222 psi or 42.9 MPa.
-\subsubsection{Analysis of short beams – shear failure}
+
+\subsubsection*{Analysis of short beams - shear failure}
 For such a beam, the typical failure mode is a shear failure in the core of the beam (not the skin). Provided that the failure occurs in the core, the core shear strength (average shear stress) can be calculated by the following equation:
 Shear stress: \[ \tau = \frac{P}{2.c.w} \]
 \\
@@ -184,7 +192,8 @@ w = width of panel (30.48 inches / 12 cm)\\
 
 For $P_{max}$ = 710 lbs or 3150 N which is a typical value for the rupture of the core of a sandwich panel being used as aircraft floor, the maximum applied load we can tolerate is $ \tau$ = 36.11 psi or 0.25MPa.
 This is associated with a maximum stress of $Stress_{max 2}$ = 36.11 psi or 0.25 MPa on the beam. This value is quite low because these beams are designed to withstand mainly traction and compression forces. They are poor in shear resistance.
-\subsubsection{Analysis of floor panels – flat wise tension/compression failure}
+
+\subsubsection*{Analysis of floor panels – flat wise tension/compression failure}
 We want to determine the core compressive limitation of the sandwich panel. Since we have a sandwich panel with thin face skin, the following equation can be used to determine the strength of the core:
 \[ \sigma = \frac{P}{s.w} \]
 with s = 144 inches / 365.8 cm and w = 32.3 inches / 82 cm \\
@@ -199,10 +208,11 @@ As a consequence, we need to design our wheelchair protection system such that t
 
 We assumed that the airline personel would be trained to assist or use any device that would make disabled people's flight experience better. We also assumed that anything we would design and implement in the cabin or in the cargo hold would be easy and quick to use and would not cause any delay in the boarding process, especially for every device that would concern wheelchair protection for storage in the cargo hold.
 
-Indeed, airlines have a lot of constraints to take into account when it comes to storing items in the cargo hold and since wheelchairs can be big and heavy we wanted to know more about how they currently handle them from the jetway to the cargo hold. Our goal is to protect the wheelchair of disabled passengers from all the aggression it could experience from the moment when the user left it at the jet way to the moment when the user get it back. In order to understand what can happen to a wheelchair during this long period of time that includes transfer to the tarmac, loading in the cargo hold, and flight disturbances, we interviewed Claude Monteils, an Air France employee at Toulouse-Blagnac TLS Airport (France). Claude is responsible of the cargo hold management of the short range aircraft of Air France’s fleet at TLS and accepted to answer our questions about the way wheelchairs are handled and stored in the cargo hold.
+Indeed, airlines have a lot of constraints to take into account when it comes to storing items in the cargo hold and since wheelchairs can be big and heavy we wanted to know more about how they currently handle them from the jetway to the cargo hold. Our goal is to protect the wheelchair of disabled passengers from all the aggression it could experience from the moment when the user left it at the jet way to the moment when the user get it back. In order to understand what can happen to a wheelchair during this long period of time that includes transfer to the tarmac, loading in the cargo hold, and flight disturbances, we interviewed Claude Monteils, an Air France employee at Toulouse-Blagnac TLS Airport (France). Claude is responsible for the cargo hold management of the short range aircraft of Air France’s fleet at TLS and offered to answer our questions about the way wheelchairs are handled and stored in the cargo hold.
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/claude_monteils}
+%\includegraphics[width=4cm]{images/claude_monteils}
 \label{fig:claude_monteils}
 \end{figure}
 
@@ -234,7 +244,7 @@ Once the wheelchair is on board the pilot is notified with the following informa
 In terms of responsibilities the airline employees have regarding wheelchair storage in the cargo hold, if the storage is arranged in advance there are several check-in points where each employee has to sign a document to testify that all the safety rules are respected so if something gets broken they are able to tell where and why. Most of the time for Air France when storage is arranged in advance, the wheelchairs are not damaged. If they are damaged it often happens in the cargo hold itself where no human operator can control it, but it’s rare. 
 However, when storage is not arranged in advance, or when disabled people only have a non powered wheelchair that is considered as a piece of luggage, there are no check-in points during the whole storage process. There are surveillance cameras on the tarmac for safety reasons but most of the time the plane, catering, fuel truck, etc… hide the employees and they are free to do whatever they want with the wheelchair. If they break it nobody will blame them since nobody will know.
 
-Based on this interview, we assumed that our disabled passenger would not require in advance any specific help or information for wheelchair storage inside the cargo hold. Our user would tell the airline just before boarding that he needs to store his wheelchair and our device would have to accomodate it quickly and safely.
+Based on this interview, we assumed that our disabled passenger would not require any specific help or information for wheelchair storage inside the cargo hold in advance. Our user would tell the airline just before boarding that he or she needs to store their wheelchair and our device would have to accomodate it quickly and safely.
 
 
 \subsection{Physical Opportunities}
