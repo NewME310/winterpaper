@@ -371,10 +371,237 @@ Several classmates and peers were users for this prototype and provided the majo
 
 \section{Funky Prototype}
 
+The conclusion of Dark Horse brought the team to the beginning of the Funk-tional prototyping mission.  This mission called for the creation of a functional system that could be integrated using funky materials such as duct tape, foam core, etc. The system needed have enough functionality such that it could would answer critical questions by being tested in real time.
+
+While our team was brainstorming about the first version of the funktional prototype, the first issue that we immediately had to deal with was defining the boundaries of our system. We wanted to make our user feel more in control of his/her environment but at the same time we realized that the word environment had a very extensive meaning that we needed to define more accurately. In order to do so, we defined our system at first as everything that happens between the departure airport gate and the arrival airport gate, but this definition was too broad to really identify and focus on the main pain points. 
+
+To help us build our vision for our prototype we defined the following system diagram shown in Figure \ref{fig:system_diagram} where we have clearly identified elements that are constraints in red, elements that we can modify in our design in green and elements that are both in orange.
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{system_diagram.jpg}
+   \caption{System boundaries and elements to focus on for our design}
+  \label{fig:system_diagram}
+\end{figure}
+
+It helped us identify three main issues :
+
+\begin{easylist}[itemize]
+
+& Boarding/Deboarding the plane, which we tried to address with our dark horse prototype.
+
+& Moving through the cabin space is a huge issue, especially if passengers with reduced mobility want to use the lavatories.
+
+& Feeling comfortable in your seat. This the big issue we decided to address for the funktional prototype. We decided to focus on the armrest because we saw it as a way to make people feel more comfortable in their seats as well as make it easy for them to access their seat but also as a place to centralize the controls (fan, light, flight attendant call, etc.) 
+
+\end{easylist}
+
 
 \subsection{Benchmarking}
+
+The Dark Horse mission focused on the reconfiguration of the cabin to meet the passengers’ needs.  For Funky, we decided to focus on how the user controls their immediate environment in the airplane and how that can be defined.  We decided to create a subsystem of the airplane chair that consisted of the seat, the TV screen in front of the passenger, the overhead bin above the head of the passenger, and the armrest on both sides.
+
+\textbf{Version 1: Controlling the Environment through Controls} \\
+Version 1 focused on controlling the environment by changing the methods in which the passenger can use the controls or buttons at their seats.  Today, the passenger has to reach above his head on the overhead bin compartment to call the flight attendant, to change the air flow and direction, or to turn on or off the light.  This is not an ideal arrangement for our users since some of them do not have the upper body strength that is needed to lift themselves up to touch the buttons.  We decided that we needed to bring the controls down to them and make them easier to reach and more accessible.  The controls should be an assistive technology, not another aspect of the flying experience that makes our users dependent on other passengers.   
+
+We first envisioned the controls being placed upon the armrest through buttons, scroll bars, track pads, and other mechanisms. We looked into what is being done within the business classes on most flights.  Since we are focused on the economy class, we thought that if a solution is aready present in the business class, we could just integrate that same solution into the economy class. \ref{fig:ArmrestsControls1.jpg} and \ref{fig:ArmrestsControls2.jpg} show examples of controls on the armrests.  The first set of controls is used to control the position and the firmness/softness of the seat.  We thought about integrating  something similar and giving our user the ability to change these aspects of their seat given that different disabilities have different support needs. However, we focused on having the basic controls of the lights, the air conditioning, the flight attendant button for our design. 
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{ArmrestsControls1.jpg}
+   \caption{Example of current controls on the armrest in a Business Class seat. \cite{armrest_control1}}
+  \label{fig:ArmrestsControls1.jpg}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{ArmrestsControls2.jpg}
+   \caption{Example of current controls on the armrest in a Business Class seat. \cite{armrest_control2}}
+  \label{fig:ArmrestsControls2.jpg}
+\end{figure}
+
+\ref{fig:HingedArmrest.jpg} shows a hinged armrest in which a remote control lies within the armrest compartment.  We thought about incorporating a hinged cover onto the armrest with controls, not a remote, underneath in order to protect the controls from being hit on accident during flight. We worried, however, that this would make buttons less accessible to users and they would feel that they shouldn’t press them as often since they aren’t in direct contact with them at all times. 
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{HingedArmrest.jpg}
+   \caption{Hinged Armrest that could be incorporated with Control Interface. \cite{hinged}
+  \label{fig:HingedArmrest.jpg}
+\end{figure}
+
+
+The use of individual TV screens on airplanes is increasing due to the demand of entertainment.  We considered the use of the TV screen as another method of reaching the controls or making the controls accessible. Some TV screens have a remote associated with them while others have a touchscreen.  The primary interface we focused on was the touchscreen.  \ref{fig:TVScreenwithRemote.jpg} shows a TV screen with a remote in the economy section of an airplane.  \ref{fig:TouchscreenTV.jpg} below shows a touchscreen TV on an airplane in premium economy class. We also brainstormed one step further and considered what it would be like if the user could use their own electronic device (iPad, tablet, or phone) to manipulate the controls.
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{TVScreenwithRemote.jpg}
+   \caption{TV screen with remote on an airplane. \cite{TVremote}
+  \label{fig:TVScreenwithRemote.jpg}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{TouchscreenTV.jpg}
+   \caption{Touchscreen TV on an airplane. \cite{touchscreen} }
+  \label{fig:TouchscreenTV.jpg}
+\end{figure}
+
+\textbf{Version 2: Controlling the Environment with a New Armrest and Controls}\\
+
+Version 1 on Funky showed us that there were more areas that needed to be improved within our design subsystem.  We decided that we would further develop the controls but also look into ways to redesign the armrest.  Why did the armrest have to be like it is? Can it move up and down another way? Can we design something with the same functionality but to be more accessible and more comfortable?
+
+We looked into armrest in all sorts of transportations mediums. We needed to know what had already been done, what could be integrated together, and what we needed to design to surpass the shortcomings.   \ref{fig:SplitArmrests.jpg} below shows an armrest unit being split into two so that both persons have an armrest and it can be moved front to back by sliding on the mount to adjust to the desired arm position. This is presently being used in automobiles.
+
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{SplitArmrests.jpg}
+   \caption{Split Armrests that can move relative to each other.\cite{splitarmrest} }
+  \label{fig:SplitArmrests.jpg}
+\end{figure}
+
+We wanted to design the armrest so that it would not be in the way during transfer from the wheelchair into the airplane chair.  One method of doing this is shown below in  \ref{fig:LoungerArmrests.jpg}.  The armrest are part of the lounger and then pop out when the lounger changes positions.  We wanted to integrate a similar concept into the airplane chair but knew that we would have to consider a way that was slightly more complex than the mechanism below due to the fact that economy seats do not lay down or recline enough for this mechanism to be feasibly implemented. 
+
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{LoungerArmrests.jpg}
+   \caption{Lounger with Built-In Armrests \cite{lounger}
+  \label{fig:LoungerArmrests.jpg}
+\end{figure}
+
+
+Another method of moving the armrest out of the path of transfer would be to have them hydraulically move in the horizontal or vertical plane. \ref{fig:DentalChairArmrests.jpg} below shows armrests on a dental chair that can be hydraulically moved for personal preference and to allow easier transfer to the seat. Similar technology to the hydraulic movement is the lifting and lowering of an office chair using air pressure and a piston.   
+
+Figure 8. Dental Chair With Hydraulic Armrests to Position where desired. 
+http://www.dentalaegis.com/id/2009/10/operator-stool-is-the-most-important-chair-in-the-treatment-room
+
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{DentalChairArmrests.jpg}
+   \caption{Dental Chair With Hydraulic Armrests to Position where desired. \cite{dental}}
+  \label{fig:DentalChairArmrests.jpg}
+\end{figure}
+
+For a more futuristic armrest, we looked into design concepts and luxury seating.  \ref{fig:FrontArmrests.jpg} below shows a design concept for an airplane chair and business space.  The chair has armrests that come from the front and could be lifted and lowered from under the seat.  These armrests allow for a wide range of lifting and lowering mechanisms as well as more flexibility with controls that could allow the weight of the controls to be beneath the cabin.
+
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{FrontArmrests.jpg}
+   \caption{Armrests Located on the Front of the Seat. \cite{frontarmrests}
+  \label{fig:FrontArmrests.jpg}
+\end{figure}
+
+Massage chairs were the luxurious chairs that we considered.  \ref{fig:MassagerArmrests.jpg}  below displays an armrest that has the controls on the top and a spot for your arm inside a protective C-shaped area. This design allows for the comfort of knowing which armrest is yours and not bumping or touching the other person beside you.  It also has the controls easily accessible without the fear of accidentally hitting them and signaling for the flight attendant or cranking the volume up to an uncomfortable setting.
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{MassagerArmrests.jpg}
+   \caption{ The luxurious armrest of a massager with controls and a designated arm place. \cite{massage}}
+  \label{fig:MassagerArmrests.jpg}
+\end{figure}
+ 
+ 
+The final area we researched was the armrest aids for persons with limited mobility or senior adults.  One such device is shown below in \ref{fig:AssistiveArmrests.jpg}.  This device allows for the user to be aided in seating on the toilet and raising from the toilet.  This device would be applicable for both the chair armrest situation as well as the airplane bathroom accessibility situation. The mechanism for this device follows an arc trajectory during use. This arc trajectory aids passengers that have limited mobility and difficulty seating and standing by allowing them to have a device that moves in a path similar to their mass center. This armrest would be useful for limited mobility passengers that could walk short distances and are not confined to a wheelchair.
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{AssistiveArmrests.jpg}
+   \caption{ Lifting and Lowering Armrest Mechanism for the Elderly. \cite{toilet}
+  \label{fig:AssistiveArmrests.jpg}
+\end{figure}
+
+
 \subsection{Description of the prototype}
+
+
+\textbf{Controls}
+
+Funky allowed us to create different interfaces for interacting with the cabin controls in order to examine the level of independence and control a person with reduced mobility experiences with each. After speaking to our users, we know that reaching the controls on the ceiling can be very hard, especially if a passenger does not have much upper body strength. Thus, we wanted to find a way to bring the controls to them and minimizing the effort exerted into changing their cabin environment.  Our team focused on 4 main areas for inputs shown in Figure \ref{fig:ControlArchitecture.jpg}: buttons on the armrest, GUI on screen, GUI on personal device and automated controls.  On the backend, we had an Arduino controlling the lights, the fan and the flight attendant light. 
+
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{ControlArchitecture.jpg}
+   \caption{Architecture of the system we wanted to build to offer a centralized and better control of the environment to our user}
+  \label{fig:ControlArchitecture.jpg}
+\end{figure}
+
+\textbf{Buttons on armrest}
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{FoamArmrest.jpg}
+   \caption{ Prototyped armrest with integrated buttons}
+  \label{fig:FoamArmrest.jpg}
+\end{figure}
+
+Since passengers are already accustomed to using buttons to change their environment or summon the flight attendant, we decided to bring these buttons closer to them and test the type of input that was more intuitive to the desired output. The final iteration is shown in  Figure \ref{fig:FoamArmrest.jpg}. The location of these inputs is key- we want them to be readily accessible when the user needs them but “invisible” enough such that the user does not accidentally press them. 
+
+After testing different locations for each button, we decided that all of them should be placed on the side of the armrest (so they are not accidentally triggered) with markings on the top of the armrest so it is easy to determine the function of each. However, the flight attendant button was actually to remain on the top of the armrest except inserted into an inlet so that once would intentionally have to go into a lower plane to press the button. We tested buttons for both the fan and the lights but realized that it was more intuitive to use a potentiometer to control both of these functions, especially so the user could control the intensity of both. A switch would toggle between fan and light functionality, much like how you choose your right or left rear view mirror to be adjusted in your car.  
+
+While the set up for all the inputs was designed on the armrest, there were unfortunately technical complications we did not foresee and were thus unable to fully test out this prototype. 
+
+GUI on Screen & Device
+In order to test whether users were more comfortable with a Graphic User Interface (GPI) as opposed to physical buttons, we created a GUI on MATLAB, loaded it on to a table and connected this to our Arduino. The GUI, shown in Figure \ref{fig:MATLABGUI.jpg}, has the ability to control the lights, the fan, and the flight attendant call button.
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{MATLABGUI.jpg}
+   \caption{ GUI that controls the lights, fan and flight attendant call button. }
+  \label{fig:MATLABGUI.jpg}
+\end{figure}
+
+This GUI was utilized two test two different scenarios, having the ability to control the GUI as if it was placed on the seatback of the seat in front of you with both touch and with the trackball shown in Figure \ref{fig:Trackball.jpg} as well as having the user controlling it with their hands as if they were using your own device. 
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{TrackbalI.jpg}
+   \caption{ Trackball used to control GUI on seatback of seat in front of you. }
+  \label{fig:Trackball.jpg}
+\end{figure}
+
+
+\textbf{Automated Controls}
+
+After exploring different inputs a user could trigger to control their environment, our team decided to take a step back and go back to the basics. Why does a user want to turn their light on? Why do they want their fan off? It seemed to us that there are specific needs a user is trying to satisfy when changing these aspects of their environment, so what if the cabin could anticipate these needs and change the cabin for them? Would they still feel in control and independent? 
+
+We decided to test out our hypothesis by assuming that people want to turn on the lights when they want to read. Therefore, if a passenger brings out a book, the light should automatically turn on. We tested this by using an image detection algorithm in MATLAB that would use the camera to detect if a certain color was present and would then trigger a command to turn the light on. We then got a light blue book and used this program to turn the lights on when the book appeared and off when the book disappeared. While this is not incredibly reliable or robust at the moment, we envisioned that if the cabin could sense when you had paper, or text or even your hands in a certain “reading” position, the light would turn on. Similarly, we could imagine using different types of remote or tactile temperature sensors to control the fan.
+
+\textbf{Armrest}
+CLIFFF THIS IS YOUR SECTION!
+
 \subsection{Learnings}
+
+Funky version 1 taught us that it is very important to define our goals and our vision before trying to build anything. We took time to precisely define what problems we wanted to tackle and it allowed us to get a very nice result for the second version of our prototype.
+
+Version 2 of the funky prototype was the direct evolution of version 1 since we decided to keep focusing on the controls and to bring this idea and concept as far as we could. Since we had designed different devices to control the user’s environment (buttons on the armrest, trackball, smartphone/tablet app,...) we wanted to know which one was the best for a disabled passenger and we asked one of them to come and test our prototypes.
+
+We invited José Luis Naranjo Montoya, a 28 year old T6-complete paraplegic to share our vision with him and to get user’s feedback about our version 2 funky prototype which was made of two parts : the armrest and the mechanism we designed to make it lower and raise, and the controls of the environment that we wanted initially to centralize in the armrest.
+
+\textbf{User’s feedback about the armrest mechanism we designed:}
+
+When we decided to redesign the armrest and the mechanism that makes it lower and raise, we identified two main functions for the armrest: rest the passenger’s arm and divide the space. But while testing our mechanism with José we realized that we had neglected one very important function of the armrest : being used as a handle by people with reduced mobility. Indeed, disabled people often use the armrest as a handle for support when they get in the cabin and shift in their seat. Therefore the armrest has to be reliable since our user relies on it to support his/her weight, and this is obviously something we learnt from José and that made us change our design priorities concerning the armrest.
+
+Another important point we also learnt from José is about the location of the armrest. It needs to be flush with the seats when it is lowered otherwise it doesn’t make getting into the seats that much easier. This can seem to be in contradiction with the previous point since on one hand our user uses the armrest as a handle but on the other hand he does not want it to be an obstacle between him and his seat. In fact, ideally our user would like to have the aisle armrest flush with the seat but the other armrest up to use it as a handle. For our user the two armrest are not equal and this way of thinking opened for us a whole new design space. 
+
+
+\textbf{User’s feedback about the control systems we designed:}
+
+\begin{easylist}[itemize]
+
+& Buttons in the armrest: Potentially problematic as limited mobility users prefer to have something to hold on to that is sturdy when they move themselves. However, buttons are a good way to access quickly a function (light or fan) and could be used as a redundant system or a complement of a fully automated system that could happen to fail.
+
+& Trackball to control a GUI that is on the screen in front of the passengers: the trackball itself is clumsy to use and requires a lot of precision from the user. This is not ideal for quadriplegic users who only have partial sensitivity in their fingers. For them it is more intuitive to tap on a touchscreen or a tablet.
+
+& Touchscreen which could be a smartphone/tablet belonging either to the passenger or the airline: It seems that holding the device is not as easy as expected and our user would prefer to have it in front of them where the normal screen in the plane is. But in this case, the use of the screen requires the passenger to lean forward to touch it which may be hard for someone who does not have a lot of core strength due to his/her handicap.
+
+& Cabin anticipating the user’s need: we were not able to test our concept of a thermal camera which, by analysing the passenger’s body temperature, can turn the fan on and off if the passenger is hot or cold. However, we were able to test our idea of a webcam detecting the presence of a book and sending the right information to turn the light on. José really liked this idea. He did not see it as an assistive technology that makes him lose his independence but really as an assistive technology that makes him independent from the others. He does not need to ask someone to turn the light on for him, the cabin has anticipated his need and the gesture that causes the light to turn on comes from him directly so he does not feel it as a loss of control on his environment. However, he mentioned that it would probably need redundant controls since autonomous systems have too many cases to work perfectly in and people would not trust it.
+
+\end{easylist}
+
 \section{Going Back to The Need}
 Following the wrap up of our funky prototype, the Stanford team decided to take a step back to figure out if we were truly solving the burning need. We analyzed all of our prototypes up to this point and saw an overarching theme we were trying to address: giving our users their independence back. With independence as our umbrella, our team looked at the whole flying experience piece by piece, with the purpose of identifying the points at which independence truly breaks down. 
 
