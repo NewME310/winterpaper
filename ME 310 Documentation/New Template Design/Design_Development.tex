@@ -748,7 +748,7 @@ For a process that takes place prior to a flight, time efficiency is extremely i
 \begin{figure}[h]
   \centering
      \includegraphics[width=7cm]{images/instructionsstorage.png}
-   \caption{Tweet from Josie Verguese about her experience when her wheelchair did not make it to her destination.}
+   \caption{Securing the wheelchair}
   \label{fig:instructionsstorage.png}
 \end{figure}
 
@@ -764,41 +764,48 @@ Finally, our user testing confirmed our theory that we would need retractable wa
 
 %take it from here robbie!
 
-
-
-
-
-
-
-
-
-
-
 \subsubsection{Inflatable Materials}
 
-\textbf{Inflatable Materials}
 In order to test the feasibility of an inflatable device in the cargo hold there were a few problems that needed to be addressed. 
 
-\subsection{Wheelchair Tracking}
+\noindent\textbf{Pressure}\\
+The cargo hold of many planes is not pressurized in order to save on costs. One of our goals was to determine if an inflatable device to protect the wheelchair would pose a problem in low pressure situations. Initially we were unsure as to what the pressure in the cargo hold would be, and as such decided to design for the worst case when the pressure is the same inside the cargo hold as outside. 
 
-\subsubsection{Pressure}
-The cargo hold of many planes is not pressurized in order to save on costs. One of our goals was to determine if an inflatable device to protect the wheelchair would pose a problem in low pressure situations. Initially we were unsure as to what the pressure in the cargo hold would be, and as such decided to design for the worst case when the pressure is the same inside the cargo hold as outside. \\
+It was important to design for this case as regardless of the pressure in the cargo hold, in any emergency situations where the cabin lost power, we would not problems to arise in the cargo hold potentially making the situation worse.\\
 
-It was important to design for this case as regardless of the pressure in the cargo hold, in any emergency situations where the cabin lost power, we would not problems to arise in the cargo hold potentially making the situation worse.
-
-\subsubsection{Temperature}
+\noindent\textbf{Temperature}\\
 A second potential problem with an inflatable device in the cargo hold is that the luggage does not require the same heating and insulation as passengers. While it may not get as cold as the air outside (approximately -40 C) in normal situations, as in the pressure situation the device must be designed reliably for an emergency. \\
 
-\subsubsection{Testing}
-While it may be possible to test the effects of pressure on an inflatable device without taking it into a plane by increasing the pressure inside the inflatable device since the pressure differential is the most important aspect to test. However, its much more difficult to test this pressure differential at a realistic temperature on the ground. Instead we decided it would be best to get an inflatable structure up to approximately the height of a plane and determine what failure modes if any would be present. \\
+\noindent\textbf{Testing}\\
+While it may be possible to test the effects of pressure on an inflatable device without taking it into a plane by increasing the pressure inside the inflatable device since the pressure differential is the most important aspect to test. However, its much more difficult to test this pressure differential at a realistic temperature on the ground. Instead we decided it would be best to get an inflatable structure up to approximately the height of a plane and determine what failure modes if any would be present. 
 
 In order to do this we attached an arm flotation device fully filled to a weather balloon. This balloon was released in order to take the device into the upper atmosphere where it would experience similar conditions to those of an airplane. While it ignores some effects from the natural plane insulation, its a more extreme environment in all cases so its a good measure of feasibility. \\
 
-\subsubsection{Results}
+\noindent\textbf{Results}\\
 Unfortunately the barometer which was being used as an altimeter for this experiment failed, and as such we were unable to get reliable altitude data on the flight. However by looking at the videos returned from the launch, and given the groups prior experience with weather balloons a reasonably reliable estimate of 50,000 - 60,000 ft can be estimated for when the flotation device popped which is significantly higher than an embraer jet flies (37,000 ft maximum). We were able to see small water droplets on the larger weather balloon which froze at altitude forming ice crystals.
 
 
 \subsection{Wheelchair Tracking Concept}
+
+We envision a wheelchair tracking system in which each storage container has a unique identifier, such as a QR code, which can be tracked as the container moves from the jetway to the tarmac, into the cargo hold, and then back out again after landing. The identifier can be recognized at a series of checkpoints, which need only consist of a webcam if a QR code is used. Such a system will provide our users with the peace of mind that their mobility device has not been mistreated or left behind.
+
+An important aspect of this system is that it can also help develop empathy on the part of the baggage handlers. Wheelchair users will have the opportunity to tip handlers who've done a good job in managing their mobility device, both providing an incentive for doing a better job while also helping form a closer connection between two people who may never meet face to face.
+
+An overview of the system and one potential user interaction are in Figures \ref{fig:tracking} and \ref{fig:tips}.
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=8cm]{images/tracking.png}
+   \caption{Wheelchair tracking system overview.}
+  \label{fig:tracking}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[width=7cm]{images/tips.png}
+   \caption{One possible minimal interface for user interaction with the tracking system.}
+  \label{fig:tips}
+\end{figure}
 
 %\section{Brainstorming}
 %The problem statement provided by Embraer gave a great deal of direction to our brainstorming sessions including the two parts of the team (Stanford and USP).  The design space concerned two potential users: limited mobility or disabled passengers and the flight crew.  The need-finding and benchmarking phases began with looking at the perspective of the disabled passengers and what is out there for them in the current system.  The flight crew perspective brought restrictions on the design space by limiting the system to being controlled by the flight crew and fitting to their needs and motivations as well.
