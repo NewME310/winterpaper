@@ -90,7 +90,7 @@ In order to protect the passengers’ wheelchairs from damages, our team decided
 
 \textbf{Geometric constraints due the cargo hold shape:}
 
-On \ref{aircraft_structure} we can see that the geometry of the cargo hold is an important limitation for our design since the semi elliptical shape considerably reduces the volume and height available for storage.
+On \ref{fig:aircraft_structure} we can see that the geometry of the cargo hold is an important limitation for our design since the semi elliptical shape considerably reduces the volume and height available for storage.
 
 \begin{figure}[h]
 \centering
@@ -103,29 +103,29 @@ In order to make sure that the product we want to design to protect the wheelcha
 
 \begin{easylist}
 
-& The cargo hold characteristic dimensions that are shown on \ref{cargo_hold_geometry_table} 
+& The cargo hold characteristic dimensions that are shown on \ref{fig:cargo_hold_geometry_table} 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=7cm]{images/cargo_hold_geometry_table.png}
 \caption{Cargo hold characteristic dimensions}
-\label{fig: cargo_hold_geometry_table }
+\label{fig:cargo_hold_geometry_table}
 \end{figure}
 
-& The characteristic dimensions of one of the biggest powered wheelchair that is available on the market (\ref{big_wheelchair}). Its dimensions are shown on \ref{wheelchair_geometry_table}.
-
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=7cm]{images/big_wheelchair.png}
-%\caption{One of the heaviest powered wheelchair of the market designed for obese disabled people (https://www.shermanoaksmedical.com/M94_p/m94-invacare.htm)}
-%\label{fig: big_wheelchair}
-%\end{figure}
+& The characteristic dimensions of one of the biggest powered wheelchair that is available on the market (\ref{fig:heavy_wheelchair}). Its dimensions are shown on \ref{fig:wheelchair_geometry_table}.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{images/seat_dimensions_table.png}
-\caption{Table presenting all the dimensions that define an airplane seat}
-\label{fig: seat_dimensions_table}
+\includegraphics[width=7cm]{images/heavy_wheelchair.png}
+\caption{One of the heaviest powered wheelchair of the market designed for obese disabled people (https://www.shermanoaksmedical.com/M94\_p/m94-invacare.htm)}
+\label{fig:heavy_wheelchair}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{images/wheelchair_geometry_table.png}
+\caption{Table presenting all the dimensions of the wheelchair}
+\label{fig:wheelchair_geometry_table}
 \end{figure}
 
 \end{easylist}
@@ -140,10 +140,10 @@ To conclude about the geometric constraints of the cargo hold, given that the bi
 
 As previously mentioned when our team interviewed the Air France employee in charge of cargo hold management, wheelchairs can be very heavy and the contact area with the cargo floor is very small. This can generate stress that the cargo hold floor will not be able to withstand. In order to design a product that will protect the wheelchair inside the cargo hold, our team needed to analyze the stress limitations of the cargo hold floor to take them into account in our design process.
 
-Hexcel is a US company that provides aircraft manufacturers with composite material (beams and panels) used in the cargo hold floor structure. In the annex section (\ref{technical_data_fiberlam}) there is the technical data sheet of Fiberlam, the material that is used for the cargo hold structure of Embraer jet C-28-1386 Type II MEP 15-031.
+Hexcel is a US company that provides aircraft manufacturers with composite material (beams and panels) used in the cargo hold floor structure. In the annex section (\ref{fig: technical_data_fiberlam}) there is the technical data sheet of Fiberlam, the material that is used for the cargo hold structure of Embraer jet C-28-1386 Type II MEP 15-031.
 
 From these data, here are the calculations made to determine the maximum pounds per square inch the cargo hold floor can withstand. Knowing that there are different types of elements below the floor, we calculated the maximum load for each type of beam and its main failure mode and chose the most sensitive value as our limitation.
-On \ref{types_beam_cargo_hold} we can see the three different types of beam that constitute the cargo hold structure:
+On \ref{fig: types_beam_cargo_hold} we can see the three different types of beam that constitute the cargo hold structure:
 \begin{easylist}
 & The long beams that come across the entire fuselage. Because they are very long they are very sensitive to bending and flexural failure.
 & The short beams that are very close to the fuselage skin and are designed to withstand traction and compression force. They are not very resistant to shear forces since they are not suppose to experience them a lot.
@@ -165,33 +165,33 @@ Skin stress : \[ \sigma_{s} = \frac{P.s}{8.(h-t).wt} \]
 \label{fig: structural_analysis}
 \end{figure}
 
-s = beam span (2489” / 980 cm)
+s = beam span (2489 inches / 980 cm)
 P = total applied load on the surface of the beam (distributed or punctual)
-t = skin thickness (0.015” / 0.038 cm)
-w = width of panel (24.4” / 9.6 cm)
-h = panel thickness (0.66” / 1.7 cm)
+t = skin thickness (0.015 inches / 0.038 cm)
+w = width of panel (24.4 inches / 9.6 cm)
+h = panel thickness (0.66 inches / 1.7 cm)
 
-For \[ P_{max} = 490 lbs – 2170 N\] which is a typical value for the rupture of a sandwich panel being used as aircraft floor, the maximum skin stress we can tolerate is \[ \sigma_{s} = 6222 psi – 42.9 MPa\].
-This is associated with a maximum stress of \[ Stress_{max 1} = 6222 psi – 42.9 MPa\].
+For \[ P_{max} = 490 lbs or 2170 N\] which is a typical value for the rupture of a sandwich panel being used as aircraft floor, the maximum skin stress we can tolerate is \[ \sigma_{s} = 6222 psi or 42.9 MPa\].
+This is associated with a maximum stress of \[ Stress_{max 1} = 6222 psi or 42.9 MPa\].
 \subsubsection{Analysis of short beams – shear failure}
 For such a beam, the typical failure mode is a shear failure in the core of the beam (not the skin). Provided that the failure occurs in the core, the core shear strength (average shear stress) can be calculated by the following equation:
-Shear stress: \[ \tau = frac{P}{2.c.w} \]
+Shear stress: \[ \tau = \frac{P}{2.c.w} \]
 P = total load applied on the surface of the beam (distributed or punctual)
-c = core thickness (0.645” / 1.662 cm)
-w = width of panel (30.48” / 12 cm)
+c = core thickness (0.645 inches / 1.662 cm)
+w = width of panel (30.48 inches / 12 cm)
 
-For $P_{max}$ = 710 lbs – 3150 N which is a typical value for the rupture of the core of a sandwich panel being used as aircraft floor, the maximum applied load we can tolerate is $ \tau = 36.11 psi – 0.25MPa $.
-This is associated with a maximum stress of $Stress_{max 2} = 36.11 psi – 0.25 MPa$ on the beam. This value is quite low because these beams are designed to withstand mainly traction and compression forces. They are poor in shear resistance.
+For $P_{max}$ = 710 lbs or 3150 N which is a typical value for the rupture of the core of a sandwich panel being used as aircraft floor, the maximum applied load we can tolerate is $ \tau = 36.11 psi or 0.25MPa $.
+This is associated with a maximum stress of $Stress_{max 2} = 36.11 psi or 0.25 MPa$ on the beam. This value is quite low because these beams are designed to withstand mainly traction and compression forces. They are poor in shear resistance.
 \subsubsection{Analysis of floor panels – flat wise tension/compression failure}
 We want to determine the core compressive limitation of the sandwich panel. Since we have a sandwich panel with thin face skin, the following equation can be used to determine the strength of the core:
-\[ \sigma = frac{P}{s.w} \]
-with s = 144” / 365.8 cm and w = 32.3” / 82 cm
-\[ \sigma = 740 psi – 5.1 MPa \] is a typical value for the rupture of a sandwich panel being used as aircraft floor. This is directly associated with a maximum stress of \[ Stress_{max 3} = 740 psi – 5.1 MPa \] on the floor.
+\[ \sigma = \frac{P}{s.w} \]
+with s = 144 inches / 365.8 cm and w = 32.3 inches / 82 cm
+\[ \sigma = 740 psi or 5.1 MPa \] is a typical value for the rupture of a sandwich panel being used as aircraft floor. This is directly associated with a maximum stress of \[ Stress_{max 3} = 740 psi or 5.1 MPa \] on the floor.
 
 In conclusion, the most sensitive parts of the cargo hold floor are the short beams:
 $Stress_{max 2} < Stress_{max 3} < Stress_{max 1}$
  This is because these beams are designed to reinforce the cargo hold structure when it is in tension due to pressurization. Since these beam are design to withstand tension loads if a very heavy element of the cargo hold applies a shear force on them they are quite sensitive to it and do not resist it very well contrary to the floor panels and long beams which are specifically designed for this.
-As a consequence, we need to design our wheelchair protection system such that the distributed load applied on the cargo hold floor does not exceed \[ Stress_{max 2} = 36.11 psi – 0.25 MPa\]. It means that for a wheelchair such as \ref{heavy_wheelchair} we need to distribute the load over a minimum contact area with the floor which is 8 $inches^2$ – 51.61 $cm^2$. The ‘floor’ of our protection system must exceed this surface.
+As a consequence, we need to design our wheelchair protection system such that the distributed load applied on the cargo hold floor does not exceed \[ Stress_{max 2} = 36.11 psi or 0.25 MPa\]. It means that for a wheelchair such as \ref{fig: heavy_wheelchair} we need to distribute the load over a minimum contact area with the floor which is 8 $inches^2$ – 51.61 $cm^2$. The ‘floor’ of our protection system must exceed this surface.
 
 \subsection{Physical Assumptions}
 
@@ -208,7 +208,7 @@ Indeed, airlines have a lot of constraints to take into account when it comes to
 The type of wheelchair the passengers are equipped with really makes a difference in the way the airline will handle it:
 \begin{easylist}
 & For a light wheelchair, that is to say a non powered wheelchair, the forces applied on the floor per square meter is very low. Therefore, these wheelchairs do not require any particular attention. They have the same status as a piece of luggage and are taken from the jet way to a conveyor belt that puts them into the cargo hold in the end so that once the aircraft has landed the wheelchairs are the first things that come out of the cargo hold. There is no box or protection or anything to protect this type of wheelchairs.
-& For a heavy wheelchair (mostly powered wheelchairs), the problem is very different. First the wheelchair has to be able to enter the cargo hold (smaller than the door which is always the case for A320, B737 and bigger planes but Claude was not able to confirm this on smaller Embraer jets). Depending on the weight of the wheelchair, the force per square meter can be higher than what the cargo hold floor can stand. Since the contact area between the floor and the wheelchair is small (see\ref{wheelchair_contact_area}) but the weight is high, it causes lots of issues. The only way for Air France passengers to make sure their heavy powered wheelchair can go to the cargo hold and be protected from all sorts of damage is to follow a very specific and long procedure.
+& For a heavy wheelchair (mostly powered wheelchairs), the problem is very different. First the wheelchair has to be able to enter the cargo hold (smaller than the door which is always the case for A320, B737 and bigger planes but Claude was not able to confirm this on smaller Embraer jets). Depending on the weight of the wheelchair, the force per square meter can be higher than what the cargo hold floor can stand. Since the contact area between the floor and the wheelchair is small (see\ref{fig: wheelchair_contact_area}) but the weight is high, it causes lots of issues. The only way for Air France passengers to make sure their heavy powered wheelchair can go to the cargo hold and be protected from all sorts of damage is to follow a very specific and long procedure.
 \end{easylist}
 \begin{figure}[h]
 \centering
